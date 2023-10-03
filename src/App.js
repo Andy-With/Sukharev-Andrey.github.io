@@ -33,7 +33,7 @@ function App() {
 
 	async function makeTransaction() {
 		const { ethereum } = window;
-		const value = 1000000000000000; // web3.utils.toWei(0.01, "ether");
+		const value = web3.utils.toWei(0.01, "ether");
 		console.log("transaction", 'from', address, 'to', dest, 'value', value); 
 
 		try {
