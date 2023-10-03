@@ -45,7 +45,7 @@ function App() {
 						{
 							from: address,
 							to: dest,
-							value: "0x" + value.toString(16),
+							value: "0x" + Number(value).toString(16),
 						},
 					],
 				}
